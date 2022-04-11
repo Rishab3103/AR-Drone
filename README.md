@@ -4,7 +4,7 @@
 
 ## Check the Build Settings.
 1. Make sure that the AR Foundations and AR Core XR plugin is installed. If not, go to Windows > Package Manager and install them.
-2. Next go to Project Settings from Edit and make sure the following is selected.
+2. Next go to Project Settings from Edit and make sure AR Core is selected.
 ![image](https://user-images.githubusercontent.com/42771219/162718482-91c064af-b9b6-4345-bbc4-2e605526880e.png)
 ![image](https://user-images.githubusercontent.com/42771219/162718644-04b53b2c-1871-4eb0-903b-40a26bccef78.png)
 3. Next go to Player in Project Settings and make the following is selected.

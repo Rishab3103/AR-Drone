@@ -1204,6 +1204,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineBlendListCamera
+  - hash:
+      serializedVersion: 2
+      Hash: bdd31047f3d38251bb7dccf26f3adf1a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ARCameraController
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

@@ -74,6 +74,7 @@ public class GameManager : MonoBehaviour
         if (Drone.isIdle())
         {
             UpdateAR();
+            
         }
 
      }
@@ -425,6 +426,7 @@ public class GameManager : MonoBehaviour
                 Pose pose = HitResult[0].pose;
                 drone.transform.position = pose.position;
                 drone.SetActive(true);
+                
             }
         }
     }

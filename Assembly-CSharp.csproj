@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Animation\LandingState.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\ToggleCamera.cs" />
+    <Compile Include="Assets\Scripts\ARCameraController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

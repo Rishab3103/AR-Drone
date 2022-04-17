@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
         public bool y;
         public bool z;
         public float rotValue;
+        public bool clock;
+        public bool anticlock;
        
     }
 
@@ -107,39 +109,25 @@ public class GameManager : MonoBehaviour
              }
          }
          if(controls._moving)
-         { 
-         if(rotateX.x==true && rotateX.y==false && rotateX.z== false)
          {
-            rotateX.rotValue = 1.0f;
-            
-            
 
-          }
-          else
-          {
-                rotateX.rotValue = 0.0f;
-          }
 
-          if(rotateY.y==true && rotateY.x==false && rotateY.z==false)
+            if (rotateY.y == true && rotateY.x == false && rotateY.z == false && rotateY.clock == true && rotateY.anticlock == false)
           {
             rotateY.rotValue = 1.0f;
             Debug.Log(rotateY.rotValue);
           }
+          else if(rotateY.y == true && rotateY.x == false && rotateY.z == false && rotateY.clock==false && rotateY.anticlock==true)
+            {
+                rotateY.rotValue = -1.0f;
+            }
           else
             {
                 rotateY.rotValue = 0.0f;
             }
 
 
-            if (rotateZ.z == true && rotateZ.x == false && rotateZ.y == false)
-            {
-            rotateZ.rotValue = 1.0f;
            
-            }
-            else
-            {
-                rotateZ.rotValue = 0.0f;
-            }
         }
     }
 
@@ -386,19 +374,41 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void EventOnRotateYPressed()
+    public void EventOnRotateYClockPressed()
     {
         rotateY.y = true;
         rotateY.x = false;
         rotateY.z = false;
         rotateY._moving = true;
+        rotateY.clock = true;
     }
 
-    public void EventOnRotateYReleased()
+    public void EventOnRotateYClockReleased()
     {
         rotateY.y = false;
         //rotateY._moving = false;
+        rotateY.clock = false;
     }
+
+    public void EventOnRotateYAntiClockPressed()
+    {
+        rotateY.y = true;
+        rotateY.x = false;
+        rotateY.z = false;
+        rotateY._moving = true;
+        rotateY.anticlock = true;
+
+        
+    }
+
+    public void EventOnRotateYAntiClockReleased()
+    {
+        rotateY.y = false;
+        //rotateY._moving = false;
+        rotateY.anticlock = false;
+        
+    }
+
 
     public void EventOnRotateZPressed()
     {

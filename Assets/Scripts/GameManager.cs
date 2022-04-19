@@ -14,13 +14,15 @@ public class GameManager : MonoBehaviour
     public ARRaycastManager RaycastManager;
     public ARPlaneManager PlaneManager;
     public GameObject drone;
+    public GameObject empty;
    
     List<ARRaycastHit> HitResult = new List<ARRaycastHit>();
     
     public Camera arCam;
     GameObject spawnedObject;
-  
-    
+    public bool respawn;
+
+    Pose pose;
 
 
     struct DroneAnimationControls
@@ -433,13 +435,24 @@ public class GameManager : MonoBehaviour
         {
             if (PlaneManager.GetPlane(HitResult[0].trackableId).alignment == UnityEngine.XR.ARSubsystems.PlaneAlignment.HorizontalUp)
             {
-                Pose pose = HitResult[0].pose;
+                pose = HitResult[0].pose;
                 drone.transform.position = pose.position;
                 drone.SetActive(true);
                 
             }
         }
     }
+
+    public void Reset(int x)
+    {
+        if (x == 1)
+        {
+            drone.transform.position = pose.position;
+        }
+        
+    }
+
+    
 
 
 

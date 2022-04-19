@@ -14,6 +14,7 @@ public class FollowDrone : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = drone.transform.position + new Vector3(0,0,1);
+        transform.position = drone.transform.position + new Vector3(0,0.7f,0);
+        
     }
 }

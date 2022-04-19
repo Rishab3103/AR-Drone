@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - DroneController
     - FlyingAndMovingState
+    - FollowDrone
     - GameManager
     - LandingAndMovingState
     - LandingState
@@ -165,6 +166,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5110}
     - Class: 114
       Script: {instanceID: 5136}
+    - Class: 114
+      Script: {instanceID: 40198}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -708,7 +711,7 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: 7c576ab981959435570f172bd522b092
+      Hash: 5f39214c40a90aded0c06ff6bc305cc0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DroneController
@@ -1080,7 +1083,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
-      Hash: 0eed2f7db34169294fe853c5d5c58b36
+      Hash: 30c490ce1460ddf14436c5a47d941801
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -1210,6 +1213,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ARCameraController
+  - hash:
+      serializedVersion: 2
+      Hash: a72eb53bc0eea447fa67cfb9cd1b4d0a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FollowDrone
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

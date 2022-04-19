@@ -114,7 +114,7 @@
 64-->C:\Users\rbhattac\AR Drone\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:17:5-101
 65            android:name="unity.build-id"
 65-->C:\Users\rbhattac\AR Drone\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:17:16-45
-66            android:value="c75e993e-af44-41f9-8cce-49b431bfd0ce" />
+66            android:value="fca2af71-1c91-4805-9d69-afb52d993f11" />
 66-->C:\Users\rbhattac\AR Drone\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:17:46-98
 67        <meta-data
 67-->C:\Users\rbhattac\AR Drone\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:18:5-88

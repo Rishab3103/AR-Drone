@@ -9,6 +9,8 @@ public class DroneController : MonoBehaviour
     public SpawnManager spawnManager;
     private TextMeshProUGUI score_Text;
     private int scoreCount;
+    public GameObject Camera;
+
    
 
     enum DroneState
@@ -117,6 +119,7 @@ public class DroneController : MonoBehaviour
                 transform.localRotation = Quaternion.Euler(angleX, rotation.y, angleZ);
                 
                 transform.Rotate(Rotation* SpeedMultiplier*Time.deltaTime);
+                Camera.transform.Rotate(Rotation * SpeedMultiplier * Time.deltaTime);
                 Debug.Log(Rotation);
 
                 //gameManager.EventOnRotateXPressed();
@@ -153,17 +156,9 @@ public class DroneController : MonoBehaviour
     }
 
    
-    public void OnTriggerEnter(Collider other)
-    {
-        Destroy(other.gameObject);
-        IncreaseScore();
-    }
+ 
 
-    public void IncreaseScore()
-    {
-        scoreCount++;
-        score_Text.text = "Score: " + scoreCount;
-    }
+   
 
   
 
